@@ -1,0 +1,11 @@
+.bold {
+    font-weight: bold !important;
+}
+
+div .row {
+    font-size: 17px;
+}
+
+#content {
+    text-align: center;
+}
