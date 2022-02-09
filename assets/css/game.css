@@ -4,9 +4,17 @@ body {
 }
 
 .radius {
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 span {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.bold {
+    font-weight: bold !important;
+  }
+
+div .row {
+    font-size: 17px;
 }
