@@ -1,3 +1,12 @@
 body {
     margin: 0;
+    background: black;
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+span {
+    font-size: 15px;
 }

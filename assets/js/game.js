@@ -5,6 +5,9 @@ canvas.width = innerWidth
 canvas.height = innerHeight
 
 const scoreEl = document.querySelector('#scoreEl')
+const startGameBTN = document.querySelector('#startGameBTN')
+const modalEl = document.querySelector('#modalEl')
+const bigScoreEl = document.querySelector('#bigScoreEl')
 
 class Player {
   constructor(x, y, radius, color) {
@@ -68,7 +71,7 @@ class Enemy {
   }
 }
 
-const friction = 0.89
+const friction = 0.99
 class Particle {
   constructor(x, y, radius, color, velocity) {
     this.x = x
@@ -102,10 +105,20 @@ class Particle {
 const x = canvas.width / 2
 const y = canvas.height / 2
 
-const player = new Player(x, y, 10, 'white')
-const projectiles = []
-const enemies = []
-const particles = []
+let player = new Player(x, y, 10, 'white')
+let projectiles = []
+let enemies = []
+let particles = []
+
+function init() {
+  player = new Player(x, y, 10, 'white')
+  projectiles = []
+  enemies = []
+  particles = []
+  score = 0
+  scoreEl.innerHTML = score
+  bigScoreEl.innerHTML = score
+}
 
 function spawnEnemies() {
   setInterval(() => {
@@ -166,6 +179,8 @@ function animate() {
 
     if (dist - enemy.radius - player.radius < 1) {
       cancelAnimationFrame(animationID)
+      modalEl.style.display = 'flex'
+      bigScoreEl.innerHTML = score
     }
 
     projectiles.forEach((projectile, projectileIndex) => {
@@ -209,5 +224,9 @@ addEventListener('click', (event) => {
   projectiles.push(new Projectile(canvas.width / 2, canvas.height / 2, 5, 'white', velocity))
 })
 
-animate()
-spawnEnemies()
+startGameBTN.addEventListener('click', () => {
+  init()
+  animate()
+  spawnEnemies()
+  modalEl.style.display = 'none'
+})
