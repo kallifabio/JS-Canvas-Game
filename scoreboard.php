@@ -5,22 +5,41 @@ require_once 'mysql/connection.php'
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Canvas Game | ScoreBoard</title>
-    <link rel="stylesheet" href="assets/css/scoreboard.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Canvas Game | ScoreBoard</title>
+  <link rel="stylesheet" href="assets/css/scoreboard.css">
 </head>
 
 <body>
-<footer class="page-footer grey darken-4">
+  <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a class="brand-logo">JS Canvas Game</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.php">Startseite</a></li>
+        <li><a href="game.php">Zum Spiel</a></li>
+        <li><a href="scoreboard.php">ScoreBoard</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.php">Startseite</a></li>
+    <li><a href="game.php">Zum Spiel</a></li>
+    <li><a href="scoreboard.php">ScoreBoard</a></li>
+  </ul>
+  <div id="content">
+    <h3 style="color: red; text-align: center;">Dieser Service steht Ihnen derzeit nicht zur Verfügung</h3>
+  </div>
+  <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">

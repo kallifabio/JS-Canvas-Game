@@ -20,12 +20,17 @@
   <nav>
     <div class="nav-wrapper grey darken-4">
       <a class="brand-logo">JS Canvas Game</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
         <li><a href="game.php">Zum Spiel</a></li>
         <li><a href="scoreboard.php">ScoreBoard</a></li>
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="game.php">Zum Spiel</a></li>
+    <li><a href="scoreboard.php">ScoreBoard</a></li>
+  </ul>
   <div id="content">
     <h2>JS Canvas Game</h2>
     <h3>Hosted by <a href="https://bero-host.de/">Bero-Host</a></h3>
@@ -57,8 +62,14 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 
 </html>
