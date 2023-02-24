@@ -49,8 +49,9 @@ require_once 'mysql/connection.php'
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text bold">Social Media</h5>
           <ul>
-            <li><a class="waves-effect pink-text bold" href="https://www.instagram.com/pascal190901/">Instagram</a></li>
-            <li><a class="waves-effect red-text text-darken-1 bold" href="https://www.youtube.com/channel/UCSfz3_mxmqbkUkfsgirj8qg">YouTube</a></li>
+            <li><a class="waves-effect pink-text bold" href="https://www.instagram.com/pascal190901/">Instagram (Privat)</a></li>
+            <li><a class="waves-effect pink-text bold" href="https://www.instagram.com/gamer_kidd_lp/">Instagram (YouTube)</a></li>
+            <li><a class="waves-effect red-text text-darken-1 bold" href="https://www.youtube.com/@gamer_kidd_lp">YouTube</a></li>
             <li><a class="waves-effect blue-text text-darken-2 bold" href="https://www.facebook.com/pascal.nitschke">FaceBook</a></li>
             <li><a class="waves-effect blue-text bold" href="https://twitter.com/kallifabio">Twitter</a></li>
             <li><a class="yellow-text bold">Snapchat: pascal190901</a></li>
@@ -61,7 +62,7 @@ require_once 'mysql/connection.php'
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Copyright © 2022 Pascal Nitschke - All Rights Reserved
+        Copyright © 2022-2023 Pascal Nitschke - All Rights Reserved
         <a href="https://kallifabio.net/impressum" class="waves-effect white-text right">Impressum</a>
       </div>
     </div>
