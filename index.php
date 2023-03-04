@@ -56,10 +56,12 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright white-text">
       <div class="container">
         Copyright © 2022-2023 Pascal Nitschke - All Rights Reserved
-        <a href="https://kallifabio.net/impressum" class="waves-effect white-text right">Impressum</a>
+        <a href="agb.php" class="waves-effect white-text right">Datenschutzerklärung</a>
+        <a class="grey-text text-darken-4 grey darken-4 right" style="cursor: default;">TestTestTestTest</a>
+        <a href="impressum.php" class="waves-effect white-text right">Impressum</a>
       </div>
     </div>
   </footer>
